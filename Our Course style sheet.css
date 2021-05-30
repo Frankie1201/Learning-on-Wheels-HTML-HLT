@@ -1,0 +1,163 @@
+.head1{
+    font-size: 75px;
+    color: crimson;
+    font-weight: bold;
+    text-align: center;
+}
+.head2{
+    font-size: 20px;
+    color: darkblue;
+    text-align: center;
+}
+
+.nav{
+    width: 100%;
+    background-color: crimson;
+    color: white;
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.nav a{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    float: left;
+}
+
+.nav-right{
+    float: right;
+}
+
+.box1{
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    width: 800px;
+    height: 200px;
+    background-color: darkblue;
+    transition-property: width;
+    transition-duration: 4s;   
+}
+
+.box1:hover{
+    width: 1238px;
+}
+
+.box1:hover{
+    background-color: crimson;
+}
+
+.soft-text{
+    color: white;
+    font-size: 15px;
+}
+
+.soft-header {
+    color: white;
+    font-size: 50px;
+}
+
+.box2{
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    width: 800px;
+    height: 200px;
+    background-color: darkblue;
+    transition-property: width;
+    transition-duration: 4s;   
+}
+
+.box2:hover{
+    width: 1238px;
+}
+
+.box2:hover{
+    background-color: crimson;
+}
+
+.cyber-text{
+    color: white;
+    font-size: 15px;
+}
+
+.cyber-header {
+    color: white;
+    font-size: 50px;
+}
+
+.box3{
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    width: 800px;
+    height: 200px;
+    background-color: darkblue;
+    transition-property: width;
+    transition-duration: 4s;   
+}
+
+.box3:hover{
+    width: 1238px;
+}
+
+.box3:hover{
+    background-color: crimson;
+}
+.data-text{
+    color: white;
+    font-size: 15px;
+}
+
+.data-header {
+    color: white;
+    font-size: 50px;
+}
+
+.box4{
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    width: 800px;
+    height: 200px;
+    background-color: darkblue;
+    transition-property: width;
+    transition-duration: 4s;   
+}
+
+.box4:hover{
+    width: 1238px;
+}
+
+.box4:hover{
+    background-color: crimson;
+}
+.AWS-text{
+    color: white;
+    font-size: 15px;
+}
+
+.AWS-header {
+    color: white;
+    font-size: 50px;
+}
+
+footer{
+    width: 100%;
+    bottom: 0px;
+    background-color: crimson;
+    color: white;
+    position: static;
+    padding: 20px 0px 20px 0px;
+    font-size: 15px;
+}
+.media{
+    float: right;
+    margin-right: 20px;
+    padding-bottom: 18px;
+    font-size: 25px;
+}
