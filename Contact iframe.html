@@ -1,22 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="Contact iframe script.js"></script>
 
     </head>
     <body>
         <form>
             <fieldset>
-                <legend>Contact Learning on Wheels</legend>
-                Full name <br/>
-                <input type="text" id="Full-Name" name="Full-Name" placeholder="John Doe"/>
-                <br/>
-                Email Address <br/>
-                <input type="email" id="Email-Address" name="Email-Address" placeholder="example@example.com"/>
-                <br/>
-                Message <br/>
-                <textarea rows="16" cols="82" name="comment" form="usrform" placeholder="Enter message here"></textarea>
-                <br/>
-                <input type="Submit" value="Send Message"/>
+                <legend>Contact For More Information</legend>
+
+                First Name : <br/>
+                <input type="text" 
+                value=""
+                name="ufirstname"
+                id="f_name"
+                placeholder="John"
+                onblur="F_Name_Alert(this)"/>
+                <p id="error f_name" style="color: red;"></p>
+
+                Last Name : <br/>
+                <input type="text" 
+                value=""
+                name="ulastname" 
+                id="l_name"
+                placeholder="Doe"
+                onblur="changeColor(this)"/>
+                <p id="error l_name" style="color: red;"></p>
+
+                Email Address : <br/>
+                <input type="text" 
+                value=""
+                name="uemailaddress"
+                id="e_address"  
+                placeholder="example@email.com"
+                onblur="changeColor(this)"/>
+                <p id="error e_address" style="color: red;"></p>
+                
+                Address<br/>
+                <input type="text"
+                name="uaddress" 
+                id="address"
+                value="" 
+                placeholder="First Line of Address"/>
+                <p id="error_address" style="color: red;"></p>
+
+                City<br/>
+                <input type="text"
+                name="ucity" 
+                id="city"
+                value="" 
+                placeholder="Name of City"/>
+                <p id="error_city" style="color: red;"></p>
+
+                Postcode<br/>
+                <input type="text"
+                name="upost" 
+                id="post"
+                value="" 
+                placeholder="Postcode"/>
+                <p id="error_post" style="color: red;"></p>
+                                                                              
+                
+                Country<br/>
+                <input list="country_op" name="country" id="ucountry">
+                    <datalist id="country_op">
+                                <option value="">
+                                <option value="England">
+                                <option value="Republic of Ireland">
+                                <option value="Northern Ireland">
+                                <option value="Scotland">
+                                <option value="Wales">
+                    </datalist>
+                    <p id="error_country" style="color: red;"></p>
+
+                    I am interested in...
+                    <label>Software Academy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio" value="Software Academy" id="soft" name="Course"/>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Cyber Academy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio" id="cyber" value="Cyber Academy" name="Course"/>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Data Academy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio" id="data" value="Data Academy" name="Course"/>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>AWS re/Start program&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio" id="AWS" value="AWS re/Start program" name="Course"/>
+                    <p id="disp" style="color: red;"></p>
+                    <p id="error" style="color: red;"></p>
+                    <br/>
+                <input type="button" 
+                       value="Contact"
+                       onclick="Contact()"/>
                 <br/>
             </fieldset>
         </form>
